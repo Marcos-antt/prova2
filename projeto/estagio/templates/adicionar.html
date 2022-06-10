@@ -17,13 +17,13 @@
     <div class="col-8 m-auto pt-4 pb-2 text-center">
 
         <div id="result"></div>
-        <form name="form" id="form" action="{% url 'create' %}" onsubmit="salvar(event)">
+        <form name="form" id="form" action="{% url 'create' %}">
             {% csrf_token %}
             <!--{{form.as_p}}-->
             <div id="form" class="form-group">
                 <div class="form-group mt-4">Nome: {{form.nome}}</div>
                 <div class="form-group mt-4">Texto: {{form.texto}}</div>
-                <div class="form-group mt-4">Data: {{form.date}}</div>
+                <div class="form-group mt-4">Data e Hora: {{form.date}}</div>
             </div>
             <div class="m-auto pt-4 pb-2 align-items-center">
                 <input type="submit" class="btn btn-success" value="Salvar"></input>
