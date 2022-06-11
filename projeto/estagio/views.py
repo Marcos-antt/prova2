@@ -6,7 +6,8 @@ from estagio.models import Estagito
 
 def home(request):
     data = {}
-    data['db'] = Estagito.objects.order_by('-id')
+    data['db'] = Estagito.objects.all().order_by('-date')
+    #data['db'] = Estagito.objects.order_by('-id')
     return render(request, 'index.html', data)
     
 def form(request):

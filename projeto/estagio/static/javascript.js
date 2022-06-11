@@ -16,9 +16,9 @@
                     if (ajax.status === 200 && ajax.readyState === 4) {
                         let result = doc.querySelector('#result');
                         result.innerHTML = 'Postagem realizada!';
-                        result.classList.add('alert');
+                        result.classList.add('alert');  
                         result.classList.add('alert-success');
-                        setTimeout("location.href = '/';", 2000);
+                        setTimeout("location.href = '/';", 1500);
 
 
                     }
